@@ -63,5 +63,6 @@ int main() {
 	stack_push(mystack, 'A');
 	stack_push(mystack, 'B');
 	char test = stack_get<char>(mystack);
+	stack_delete(mystack);
 	std::cout<<test;
 }
