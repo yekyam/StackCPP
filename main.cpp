@@ -27,8 +27,8 @@ void stack_push(T *ptr, T x) {
 
 template <typename T>
 void stack_pop(T *ptr) {
-	T size = ptr[0];
-	T num_of_elm = ptr[1];
+	int size = ptr[0];
+	int num_of_elm = ptr[1];
 
 	if (num_of_elm > 0) {
 	ptr[1]--;
@@ -46,8 +46,8 @@ void stack_delete(T *ptr) {
 
 template <typename T>
 T stack_get(T *ptr) {
-	T size = ptr[0];
-	T num_of_elm = ptr[1];
+	int size = ptr[0];
+	int num_of_elm = ptr[1];
 
 	if (num_of_elm > 0) {
 	return ptr[num_of_elm+1];
