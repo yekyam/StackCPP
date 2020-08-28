@@ -13,8 +13,8 @@ T *stack_create(int size) {
 
 template <typename T>
 void stack_push(T *ptr, T x) {
-	T size = ptr[0];
-	T num_of_elm = ptr[1];
+	int size = ptr[0];
+	int num_of_elm = ptr[1];
 	
 	if (num_of_elm >= size){
 		printf("Stack too big!\n");
